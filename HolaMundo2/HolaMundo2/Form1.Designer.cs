@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnPruebas = new Button();
+            btnVentana = new Button();
             SuspendLayout();
             // 
             // btnPruebas
@@ -41,11 +42,22 @@
             btnPruebas.UseVisualStyleBackColor = true;
             btnPruebas.Click += btnPruebas_Click;
             // 
+            // btnVentana
+            // 
+            btnVentana.Location = new Point(248, 188);
+            btnVentana.Name = "btnVentana";
+            btnVentana.Size = new Size(224, 47);
+            btnVentana.TabIndex = 1;
+            btnVentana.Text = "Crear ventana";
+            btnVentana.UseVisualStyleBackColor = true;
+            btnVentana.Click += btnVentana_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVentana);
             Controls.Add(btnPruebas);
             Name = "Form1";
             Text = "Form1";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button btnPruebas;
+        private Button btnVentana;
     }
 }
